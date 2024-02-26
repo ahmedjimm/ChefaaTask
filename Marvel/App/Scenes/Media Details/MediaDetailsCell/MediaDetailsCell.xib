@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="MediaDetailsCell" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="409"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="242" height="409"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Captain America (1968) #132" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8s-Cp-o2J">
+                        <rect key="frame" x="5" y="354" width="232" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="zAB-eN-NMu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halk" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-o3-qzp">
+                        <rect key="frame" x="0.0" y="0.0" width="242" height="349"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="A8s-Cp-o2J" firstAttribute="top" secondItem="1Yx-o3-qzp" secondAttribute="bottom" constant="5" id="0zT-Pw-7vX"/>
+                <constraint firstItem="1Yx-o3-qzp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="51p-9u-OFu"/>
+                <constraint firstAttribute="bottom" secondItem="A8s-Cp-o2J" secondAttribute="bottom" constant="5" id="94z-Em-ijl"/>
+                <constraint firstAttribute="trailing" secondItem="A8s-Cp-o2J" secondAttribute="trailing" constant="5" id="Aj6-uc-tXj"/>
+                <constraint firstAttribute="trailing" secondItem="1Yx-o3-qzp" secondAttribute="trailing" id="qb5-Sm-DBe"/>
+                <constraint firstItem="A8s-Cp-o2J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="uv8-GS-5n5"/>
+                <constraint firstItem="1Yx-o3-qzp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yAe-Xl-MND"/>
+            </constraints>
+            <size key="customSize" width="242" height="409"/>
+            <connections>
+                <outlet property="imgItem" destination="1Yx-o3-qzp" id="frD-QC-0Rc"/>
+                <outlet property="lblName" destination="A8s-Cp-o2J" id="mPW-fq-DTa"/>
+            </connections>
+            <point key="canvasLocation" x="309.92366412213738" y="62.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="halk" width="1920" height="640"/>
+    </resources>
+</document>

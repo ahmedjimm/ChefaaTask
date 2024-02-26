@@ -1,0 +1,32 @@
+PODS:
+  - EmptyStateKit (1.1.0)
+  - FSPagerView (0.8.3)
+  - MarqueeLabel (4.3.2)
+  - NotificationBannerSwift (3.2.1):
+    - MarqueeLabel (~> 4.3.0)
+    - SnapKit (~> 5.6.0)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - EmptyStateKit (~> 1.1)
+  - FSPagerView (~> 0.8)
+  - NotificationBannerSwift (~> 3.1)
+
+SPEC REPOS:
+  trunk:
+    - EmptyStateKit
+    - FSPagerView
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  EmptyStateKit: dc41e9ce5c6089f67a49d063bce73ade9f2ba73f
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  MarqueeLabel: 15e524a6762552bb279cb17438b8a94990269fb9
+  NotificationBannerSwift: dce54ded532b26e30cd8e7f4d80e124a0f2ba7d1
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 0310091c0cd3f9a8c2025f7038fa0d6cc1092fae
+
+COCOAPODS: 1.14.2

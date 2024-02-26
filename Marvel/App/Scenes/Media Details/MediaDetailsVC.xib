@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MediaDetailsVC" customModule="Marvel" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="Hco-lq-WSe" id="quC-mi-RTx"/>
+                <outlet property="lblCount" destination="Q1V-wO-FC4" id="ymU-sf-cks"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPager" destination="PJE-yO-ZG6" id="6qt-D7-46b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-lq-WSe">
+                    <rect key="frame" x="349" y="75" width="28" height="28"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icn-nav-close-white"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/13" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1V-wO-FC4">
+                    <rect key="frame" x="183" y="784" width="27" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-yO-ZG6" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="16" y="111" width="377" height="665"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.16078431372549018" green="0.17254901960784313" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q1V-wO-FC4" secondAttribute="bottom" constant="16" id="0iR-1r-aBp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hco-lq-WSe" secondAttribute="trailing" constant="16" id="Lag-SP-sbj"/>
+                <constraint firstItem="Q1V-wO-FC4" firstAttribute="top" secondItem="PJE-yO-ZG6" secondAttribute="bottom" constant="8" id="ea9-i9-9QA"/>
+                <constraint firstItem="PJE-yO-ZG6" firstAttribute="top" secondItem="Hco-lq-WSe" secondAttribute="bottom" constant="8" id="l94-4t-CIb"/>
+                <constraint firstItem="PJE-yO-ZG6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mlj-YL-bY0"/>
+                <constraint firstItem="Hco-lq-WSe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="sZ3-fN-xsw"/>
+                <constraint firstItem="Q1V-wO-FC4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sZw-PG-QaE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PJE-yO-ZG6" secondAttribute="trailing" id="tnH-Lg-rPd"/>
+            </constraints>
+            <point key="canvasLocation" x="362.59541984732823" y="-42.253521126760567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icn-nav-close-white" width="28" height="28"/>
+    </resources>
+</document>
